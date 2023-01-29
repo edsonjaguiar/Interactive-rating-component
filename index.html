@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- displays site properly based on user's device -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <!-- CSS Custom File -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Fonts Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Interactive rating component</title>
+    </head>
+    <body>
+        <main>
+            <div class="card">
+                <div class="card__star-icon">
+                    <img src="images/icon-star.svg" alt="Icon star" />
+                </div>
+                <h1 class="card__title">How did we do?</h1>
+                <p class="card__description">
+                    Please let us know how we did with your support request. All
+                    feedback is appreciated to help us improve our offering!
+                </p>
+
+                <ul class="card__raitings">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+
+                <button type="submit" class="card__button-submit">
+                    Submit
+                </button>
+            </div>
+
+            <div class="card-thank-you hasHidden">
+                <div class="card-thank-you__illustration">
+                    <img
+                        src="images/illustration-thank-you.svg"
+                        alt="Illustration Thank You"
+                    />
+                </div>
+                <span class="card-thank-you__selection"></span>
+                <h1 class="card-thank-you__title">Thank you</h1>
+                <p class="card-thank-you__description">
+                    We appreciate you taking the time to give a rating. If you
+                    ever need more support, don't hesitate to get in touch!
+                </p>
+            </div>
+        </main>
+
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/edsonjaguiar" target="_blank">Edson</a>.
+        </footer>
+
+        <!-- JS Custom File -->
+        <script src="script.js"></script>
+    </body>
+</html>
