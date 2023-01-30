@@ -18,8 +18,12 @@ raitingElements.forEach(function (raitingElement) {
         clickedOnAnotherElement();
 
         selectedValue = event.target.innerText;
+        buttonSubmit.removeAttribute('disabled');
+
         event.target.classList.toggle('hasFocused');
     });
+
+    buttonSubmit.setAttribute('disabled', '');
 });
 
 function clickedOnAnotherElement() {

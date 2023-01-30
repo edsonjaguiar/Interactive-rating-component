@@ -2,6 +2,7 @@
 :root {
     /* Colors */
     --orange: hsl(25, 97%, 53%);
+    --faint-orange: hsl(25, 97%, 60%);
 
     --white: hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
@@ -12,7 +13,8 @@
     /* Font and Typography */
     --body-font: 'Overpass', sans-serif;
 
-    --font-size-normal: 16px;
+    --font-size-normal: 15px;
+    --font-size-h1: 1.8rem;
 }
 
 /* Reset Css */
@@ -44,18 +46,22 @@ img {
 
 /* Card Style */
 .card {
-    background: var(--dark-blue);
-    max-width: 420px;
+    background: radial-gradient(
+        ellipse at top,
+        var(--dark-blue),
+        hsl(216, 24%, 12%)
+    );
+    max-width: 412px;
     padding: 2rem;
     margin: 1.6rem;
-    border-radius: 25px;
+    border-radius: 30px;
 }
 
 .card__star-icon {
-    background: var(--medium-grey);
+    background: var(--dark-blue);
 
-    width: 43px;
-    height: 43px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
 
     display: flex;
@@ -64,13 +70,14 @@ img {
 }
 
 .card__star-icon img {
-    width: 15px;
+    width: 17px;
 }
 
 .card__title {
     color: var(--white);
     margin-top: 22px;
     font-weight: 700;
+    font-size: var(--font-size-h1);
 }
 
 .card__description {
@@ -90,7 +97,7 @@ img {
 .card__raitings li {
     cursor: pointer;
 
-    background: var(--medium-grey);
+    background: var(--dark-blue);
     color: var(--light-grey);
 
     width: 51px;
@@ -142,11 +149,15 @@ img {
 
 /* Card Thank you */
 .card-thank-you {
-    background: var(--dark-blue);
-    max-width: 420px;
+    background: radial-gradient(
+        ellipse at top,
+        var(--dark-blue),
+        hsl(216, 24%, 12%)
+    );
+    max-width: 412px;
     padding: 1.9rem;
     margin: 1.6rem;
-    border-radius: 25px;
+    border-radius: 30px;
 
     display: flex;
     text-align: center;
@@ -159,6 +170,7 @@ img {
     color: var(--white);
     margin-top: 22px;
     font-weight: 700;
+    font-size: var(--font-size-h1);
 }
 
 .card-thank-you__illustration img {
@@ -168,7 +180,7 @@ img {
 .card-thank-you__selection {
     margin-top: 22px;
 
-    background: hsl(213, 20%, 22%);
+    background: var(--dark-blue);
     color: var(--orange);
     border-radius: 30px;
 
@@ -182,6 +194,8 @@ img {
     color: var(--light-grey);
     margin-top: 10px;
     line-height: 1.6rem;
+
+    padding: 0.3rem;
 }
 
 /* Card visible */
@@ -189,8 +203,18 @@ img {
     display: none;
 }
 
-/* Footer Style */
+/* Button focused */
 .hasFocused {
+    color: var(--white);
+    font-weight: 700;
+}
+
+/* Raiting undefined */
+.card__button-submit:disabled {
+    background: var(--faint-orange);
+    opacity: 0.3;
+    cursor: not-allowed;
+
     color: var(--white);
     font-weight: 700;
 }
