@@ -8,7 +8,7 @@ let selectedValue = '';
 
 buttonSubmit.addEventListener('click', function () {
     cardThankYou.classList.remove('hasHidden');
-    mainCard.style.display = 'none';
+    mainCard.classList.toggle('hasHidden');
 
     cardSelection.innerText = `You selected ${selectedValue} out of ${raitingElements.length}`;
 });
