@@ -14,6 +14,8 @@ buttonSubmit.addEventListener('click', function () {
 });
 
 raitingElements.forEach(function (raitingElement) {
+    buttonSubmit.setAttribute('disabled', '');
+
     raitingElement.addEventListener('click', function (event) {
         clickedOnAnotherElement();
 
@@ -22,8 +24,6 @@ raitingElements.forEach(function (raitingElement) {
 
         event.target.classList.toggle('hasFocused');
     });
-
-    buttonSubmit.setAttribute('disabled', '');
 });
 
 function clickedOnAnotherElement() {
