@@ -212,6 +212,7 @@ img {
 /* Raiting undefined */
 .card__button-submit:disabled {
     background: var(--faint-orange);
+    color: var(--white);
     opacity: 0.3;
     cursor: not-allowed;
 }
