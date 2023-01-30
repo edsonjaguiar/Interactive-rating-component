@@ -214,9 +214,6 @@ img {
     background: var(--faint-orange);
     opacity: 0.3;
     cursor: not-allowed;
-
-    color: var(--white);
-    font-weight: 700;
 }
 
 /* Footer Style */
